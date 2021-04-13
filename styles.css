@@ -1,30 +1,48 @@
+body {
+  color: white;
+}
+
 @media only screen and (max-width: 300px) {
-  .container {
-    background-color: red;
+  body {
+    background: red;
   }
-  
-  .small, .medium, .large {
-    font-size: 15px;
+
+  div {
+    display: block;
+    width: 33%;
   }
 }
 
-@media only screen and (min-width: 301px) and (max-width: 767px) {
-  .container {
-    background-color: green;
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+  body {
+    background: green;
   }
-  
-   .small, .medium,.large {
-    font-size: 30px;
+  div {
+    display: inline-block;
+  }
+  .small {
+    width: 66%;
+    float: left;
+  }
+  .medium {
+    width: 33%;
+  }
+  .large {
+    width: 100%;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1500px) {
-  .container {
-    background-color: blue;
+@media only screen and (min-width: 768px) {
+  body {
+    background: blue;
   }
-  
-   .small, .medium, .large {
-    font-size: 45px;
+  .small,
+  .medium,
+  .large {
+    width: 33%;
+    display: inline-block;
   }
 }
+
+
 
