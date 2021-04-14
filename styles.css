@@ -10,7 +10,9 @@ body {
   div {
     display: block;
     width: 33%;
+    font-size: 5px;
   }
+
 }
 
 @media only screen and (min-width: 300px) and (max-width: 768px) {
@@ -21,14 +23,16 @@ body {
     display: inline-block;
   }
   .small {
-    width: 66%;
-    float: left;
+    width: 33%;
+    font-size: 10px;
   }
   .medium {
-    width: 33%;
+    width: 66%;
+    font-size: 10px;
   }
   .large {
     width: 100%;
+    font-size: 10px;
   }
 }
 
@@ -41,6 +45,7 @@ body {
   .large {
     width: 33%;
     display: inline-block;
+    font-size: 15px;
   }
 }
 
